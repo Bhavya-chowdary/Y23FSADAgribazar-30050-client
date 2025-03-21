@@ -25,6 +25,7 @@ const Navbar = () => {
           <MenuItem onClick={handleMenuClose} component={Link} to="/orders">Order Details</MenuItem>
           <MenuItem onClick={handleMenuClose} component={Link} to="/products">Product Details</MenuItem>
           <MenuItem onClick={handleMenuClose} component={Link} to="/payments">Payment Details</MenuItem>
+          <MenuItem onClick={handleMenuClose} component={Link} to="/Feedback">Feedback Details</MenuItem>
         </Menu>
 
         {/* Search Bar */}

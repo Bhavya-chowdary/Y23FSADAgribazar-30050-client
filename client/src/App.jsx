@@ -7,7 +7,9 @@ import Authentication from "./components/Authentication";
 import AdminDashboard from "./components/AdminDashboard";
 import UserDashboard from "./components/UserDashboard";
 import OrdersTable from "./components/OrdersTable";
-import { Login } from "@mui/icons-material";
+import  Feedback  from "./components/Feedback";
+
+import { Login } from "@mui/icons-material"; 
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -20,6 +22,7 @@ const App = () => {
         <Route path="/login" element={<Authentication setUser={setUser} />} />
         <Route path="/products" element={<Products />} />
         <Route path="/orders" element={<OrdersTable />} />
+        <Route path="/feedback" element={<Feedback />} />
         <Route path="/admin" element={user === "admin" ? <AdminDashboard /> : <Login />} />
         <Route path="/user" element={user === "user" ? <UserDashboard /> : <Login />} />
       </Routes>
